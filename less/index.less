@@ -54,6 +54,372 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	
 }
+
+// variables
+
+@color:  #A0021F;
+@variabe-font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+
+// Mixins
+
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer(){
+    line-height: 1em;
+	margin-top: 200px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+.navigation{
+	.center;
+	margin-left: 0 auto;
+	margin-top: 25px;
+	font-family: @variabe-font-family;
+	
+	
+	
+	a{
+
+		border-radius: 2px;
+		color: grey;
+		font-size: 1.3rem;
+		padding: 5px 8px;
+		margin-right: 55px;
+		text-decoration: none;
+		font-family: @variabe-font-family
+
+	}
+
+    a:hover {
+	background-color:@color;
+	color: white;
+	}
+}
+
+.main-header{
+
+	margin: 120px 200px;
+	
+   
+	h1{
+	   color:black;
+	   font-size: 2.8em;
+   }
+	
+    h2{
+		font-size: 2.2em;
+		color:black;
+	}
+	
+	button{
+		font-size: 16px;
+		margin-top:20px;
+		color: @color;
+		background:white;
+		border: solid 2px @color;
+	}
+
+    
+
+	p{
+		color: @color;
+		display: inline-block;
+	}
+
+}
+
+
+
+
+
+.content {
+
+	padding: 0 100px;
+		
+		
+
+		.intro{
+
+			
+			height: 50px;
+
+			 p{
+			
+				margin-right: 100px;
+				float: right;
+				width: 80%;
+				font-family: @variabe-font-family;
+				
+				
+	
+			}
+
+			h1{
+				font-size: 1.2em;
+				
+				
+			}
+
+			.introcontent p{
+				font-size: 1em;
+				line-height: 1.4em;
+				margin-bottom: 20px;
+				color: #444;
+			}
+	    }
+
+		
+
+		.skills{
+			
+			margin-top: 80px;
+			
+		
+
+				ul li{
+				font-family: @variabe-font-family;
+				margin-right: 100px;
+				float: right;
+				width: 80%;
+				font-size: 1em;
+				line-height: 1em;
+				margin-bottom: 20px;
+				color: #444;
+				margin-top: 5px;
+				margin-right: 40px;
+				}
+
+				h1{
+					font-size: 1.2em;
+					margin-right: 10px;
+					width: 200px;
+				}
+		}
+
+		.skills h1{
+			font-size: 1.2em;
+			margin-right: 10px;
+			
+			width: 200px;
+		}
+
+		.pastexp{
+			
+			margin-top: -30px;
+			margin-left: 420px;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+
+
+			
+		}
+
+
+		.pastexp ul li{
+
+
+			font-family: @variabe-font-family;
+			margin-right: 200px;
+			float: right;
+			width: 80%;
+			font-size: 1em;
+			line-height: 1em;
+			margin-bottom: -10px;
+			color: #444;
+			margin-top: 30px;
+			margin-right: 50px;
+			
+		}
+
+		.pastexp h1{
+			font-size: 1.2em;
+			margin-right: 50px;
+			height: 110px;
+
+			
+
+		}
+
+		.contact{
+			font-family: @variabe-font-family;
+			.footer;
+		}
+ 
+
+}
+
+
+@media (max-width: 500px){
+
+html, body {
+		max-width: 500%;
+		overflow-x: hidden;
+		}
+
+				.navigation{
+					.center;
+					margin-left: 0 auto;
+					margin-top: 25px;
+					font-family: @variabe-font-family;
+					
+					
+					
+					a{
+
+						border-radius: 2px;
+						color: grey;
+						font-size: 1.3rem;
+						padding: 5px 8px;
+						margin-right: 20px;
+						text-decoration: none;
+						font-family: @variabe-font-family
+				
+					}
+				
+					a:hover {
+					background-color:@color;
+					color: white;
+					}
+				}
+
+				.main-header{
+
+					margin:0 auto;
+					margin-top: 30%;
+					
+				
+					h1{
+					color:black;
+					font-size: 2.8em;
+				}
+					
+					h2{
+						font-size: 2.2em;
+						color:black;
+					}
+					
+					button{
+						font-size: 16px;
+						margin-top:20px;
+						color: @color;
+						background:white;
+						border: solid 2px @color;
+						margin-left: 20%;
+						
+					}
+				
+					p{
+						color: @color;
+						display: inline-block;
+					}
+				
+				}
+
+
+			.content{
+				
+				display:flex;
+				flex-direction: column;
+
+				padding: 0 10px;
+				
+
+				.intro{
+
+					border: solid 2px red;
+                    margin: 0 auto;
+			
+					height: 10px;
+		
+				
+
+			}
+		}
+		
+		   .skills{
+			   border: solid 2px red;
+			   height: 200px;
+			   width: 20%;
+			   margin-left: 30px;
+			   
+		   }
+
+		   .skills ul li{
+			   border: solid 3px yellow;
+		   }  
+
+		   .pastexp{
+			   border: solid 2px maroon;
+			   height: 200px;
+			   width: 20%;
+			   display: flex;
+			   flex-flow: row;
+		   }
+			   
+			   
+			 
+			   
+		   
+}
+				   
+
+			
+			
+			
+			
+			
+ 
+			
+			
+
+    
+				
+						
+
+	
+
+
+
+
+
+
+
+
+		
+
+			
+			
+			
+		
+		
+
+        
+
+
+			
+			
+
+		
+		
+	
+
+	
+
+
+
+
+
+
 

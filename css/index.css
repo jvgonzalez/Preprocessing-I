@@ -1,1 +1,333 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0 auto;
+  margin-top: 25px;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+.navigation a {
+  border-radius: 2px;
+  color: grey;
+  font-size: 1.3rem;
+  padding: 5px 8px;
+  margin-right: 55px;
+  text-decoration: none;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+.navigation a:hover {
+  background-color: #A0021F;
+  color: white;
+}
+.main-header {
+  margin: 120px 200px;
+}
+.main-header h1 {
+  color: black;
+  font-size: 2.8em;
+}
+.main-header h2 {
+  font-size: 2.2em;
+  color: black;
+}
+.main-header button {
+  font-size: 16px;
+  margin-top: 20px;
+  color: #A0021F;
+  background: white;
+  border: solid 2px #A0021F;
+}
+.main-header p {
+  color: #A0021F;
+  display: inline-block;
+}
+.content {
+  padding: 0 100px;
+}
+.content .intro {
+  height: 50px;
+}
+.content .intro p {
+  margin-right: 100px;
+  float: right;
+  width: 80%;
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+}
+.content .intro h1 {
+  font-size: 1.2em;
+}
+.content .intro .introcontent p {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin-bottom: 20px;
+  color: #444;
+}
+.content .skills {
+  margin-top: 80px;
+}
+.content .skills ul li {
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  margin-right: 100px;
+  float: right;
+  width: 80%;
+  font-size: 1em;
+  line-height: 1em;
+  margin-bottom: 20px;
+  color: #444;
+  margin-top: 5px;
+  margin-right: 40px;
+}
+.content .skills h1 {
+  font-size: 1.2em;
+  margin-right: 10px;
+  width: 200px;
+}
+.content .skills h1 {
+  font-size: 1.2em;
+  margin-right: 10px;
+  width: 200px;
+}
+.content .pastexp {
+  margin-top: -30px;
+  margin-left: 420px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.content .pastexp ul li {
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  margin-right: 200px;
+  float: right;
+  width: 80%;
+  font-size: 1em;
+  line-height: 1em;
+  margin-bottom: -10px;
+  color: #444;
+  margin-top: 30px;
+  margin-right: 50px;
+}
+.content .pastexp h1 {
+  font-size: 1.2em;
+  margin-right: 50px;
+  height: 110px;
+}
+.content .contact {
+  font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  line-height: 1em;
+  margin-top: 200px;
+  margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  html,
+  body {
+    max-width: 500%;
+    overflow-x: hidden;
+  }
+  .navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0 auto;
+    margin-top: 25px;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  }
+  .navigation a {
+    border-radius: 2px;
+    color: grey;
+    font-size: 1.3rem;
+    padding: 5px 8px;
+    margin-right: 20px;
+    text-decoration: none;
+    font-family: Corbel, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
+  }
+  .navigation a:hover {
+    background-color: #A0021F;
+    color: white;
+  }
+  .main-header {
+    margin: 0 auto;
+    margin-top: 30%;
+  }
+  .main-header h1 {
+    color: black;
+    font-size: 2.8em;
+  }
+  .main-header h2 {
+    font-size: 2.2em;
+    color: black;
+  }
+  .main-header button {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #A0021F;
+    background: white;
+    border: solid 2px #A0021F;
+    margin-left: 20%;
+  }
+  .main-header p {
+    color: #A0021F;
+    display: inline-block;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .content .intro {
+    border: solid 2px red;
+    margin: 0 auto;
+    height: 10px;
+  }
+  .skills {
+    border: solid 2px red;
+    height: 200px;
+    width: 20%;
+    margin-left: 30px;
+  }
+  .skills ul li {
+    border: solid 3px yellow;
+  }
+  .pastexp {
+    border: solid 2px maroon;
+    height: 200px;
+    width: 20%;
+    display: flex;
+    flex-flow: row;
+  }
+}
